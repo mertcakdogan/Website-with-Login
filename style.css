@@ -130,7 +130,11 @@
     height: 100%;
     background: transparent;
     border: 1px solid #fff;
+    outline: none;
     border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 25px 0 45px;
 }
 
 .input-box label {
@@ -141,6 +145,14 @@
     font-size: 1em;
     color: #fff;
     pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -14px;
+    left: 17px;
+    font-size: .8em;
 }
 
 .input-box .icon {
